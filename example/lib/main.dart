@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:example_roller_list/slot_machine.dart';
 import 'package:example_roller_list/time_selector.dart';
 import 'package:flutter/foundation.dart';
@@ -22,6 +24,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      scrollBehavior: MaterialScrollBehavior().copyWith(
+        dragDevices: {
+          PointerDeviceKind.mouse,
+          PointerDeviceKind.touch,
+          PointerDeviceKind.stylus,
+          PointerDeviceKind.unknown
+        },
+      ),
       title: 'RollerList Demo',
       theme: ThemeData(
         primarySwatch: Colors.red,
