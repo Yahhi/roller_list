@@ -1,3 +1,7 @@
+## [1.0.3] - 15.02.2024
+
+Update example app
+
 ## [1.0.2] - 25.07.2021
 
 Null safety
